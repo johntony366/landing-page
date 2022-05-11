@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'roboto';
 }
 
 .page {
@@ -10,11 +11,26 @@ body {
     display: flex;
     justify-content: space-between;
     margin: 0;
+    padding: 20px 300px 20px 300px;
+}
 
+.header,
+.main-panel-section {
+    background-color: #1F2937;
+    color: white;
+}       
+
+.header {
 }
 
 .header-links {
     display: flex;
+    gap: 16px;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: white;
 }
 
 .content {
@@ -22,14 +38,55 @@ body {
     flex-direction: column;
 }
 
-.main-panel-section {
-    display: flex;
-    align-items: center;
+.content * {
 }
 
-.left-col {
+.main-panel-section {
+    padding: 100px;
+}
+
+.main-panel {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+
+
+}
+
+.main-panel-section * {
+    border: 2px solid red;
+
+}
+
+.main-panel-heading h3 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 5px 0;
+}
+
+.main-panel-description {
+    padding: 0;
+}
+
+.main-panel-left-col {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 350px;
+}
+
+.main-image img {
+    width: auto;
+    height: 260px;
+}
+
+.main-panel-sign-up-button button {
+    font-size: 18px;
+    color: #E5E7EB;
+    background-color: #3882F6;
+    border-radius: 5px;
+    margin: 5px 0;
 }
 
 /* Information section */
@@ -43,27 +100,67 @@ body {
     margin: auto
 }
 
+.information-heading h3 {
+    font-weight: bolder;
+    font-size: 36px;
+    color: #1F2937;
+}
+
 .information-panels {
     display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.information-panel {
+    width: 150px;
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+}
+
+.information-panel img {
+    width: 140px;
+    height: 140px;
+    margin: 0;
+    padding: 0;
+    border-radius: 15px;
+    border: 5px solid #3882F6;
 }
 
 /* Quotes section */
 
 .quotes-section {
+    background-color: #E5E7EB;
+    padding: 100px;
+}
+
+.quote {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
-    margin: 100px auto;
+    width: 800px;
+    margin: auto;
+}
+
+.quote-text {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: xx-large;
+    color: #1F2937;
 }
 
 .quote-author {
     margin-top: 10px;
-    margin-left: auto;
+    margin-left: 500px;
+    font-weight: bolder;
+    
 }
 
+/* Sign up section */
+
 .sign-up-section {
-    margin: 40px;
+    padding: 100px 200px;
 }
 
 .sign-up-section * {
@@ -71,8 +168,12 @@ body {
 }
 
 .sign-up-box {
-    padding: 20px;
+    padding: 40px;
     display: flex;
+    justify-content: center;
+    background-color: #3882F6;
+    border-radius: 10px;
+    color: white;
 }
 
 .sign-up-box-left-col {
@@ -81,12 +182,27 @@ body {
     justify-content: flex-start;
 }
 
+.sign-up-box-left-col h4 {
+    font-size: 24px;
+}
+
 .sign-up-box-right-col {
-    flex: 1;
+    flex-grow: 0.5;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+.sign-up-box-right-col button {
+    background-color: #3882F6;
+    padding: 5px 25px;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: medium;
+}
+
+
 
 .copyright-text {
     text-align: center;
